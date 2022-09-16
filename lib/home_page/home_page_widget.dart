@@ -1,15 +1,14 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+
 import '../auth/auth_util.dart';
 import '../backend/api_requests/api_calls.dart';
 import '../contact_us_form/contact_us_form_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import '../login/login_widget.dart';
 import '../payment/payment_widget.dart';
 import '../vehicle_valuation_report/vehicle_valuation_report_widget.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomePageWidget extends StatefulWidget {
   const HomePageWidget({Key key}) : super(key: key);
@@ -243,9 +242,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                 ),
                               ),
+                              //caps
                               TextFormField(
                                 textCapitalization:
-                                TextCapitalization.characters,
+                                    TextCapitalization.characters,
                                 controller: vinTextFieldController,
                                 onFieldSubmitted: (_) async {
                                   if (formKey.currentState == null ||
